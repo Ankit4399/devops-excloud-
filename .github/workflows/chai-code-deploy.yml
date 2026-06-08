@@ -37,7 +37,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/devops-excloud-
+            cd /home/ubuntu/devops-excloud
             git pull origin main
             sudo docker compose pull
             sudo docker compose up -d
